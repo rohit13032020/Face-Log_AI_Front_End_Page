@@ -3,6 +3,9 @@
 
 :root {
     --bg-main:  #faf8ff;
+    --primary: #ffcc00;
+    --primary-color: #1a1a2e;
+    --text-muted: #555;
     --font-primary: 'Plus Jakarta Sans', 'Inter',
                     -apple-system, BlinkMacSystemFont,
                     'Segoe UI', sans-serif;
@@ -18,7 +21,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;app
+    position: sticky;
     top: 0;
     z-index:999;
 }
@@ -37,7 +40,7 @@ body {
     font-size: 1.6rem;
     font-weight: bold;
     margin-left: 10px;
-    line-hieight: 0.8;
+    line-height: 0.8;
     font-weight: 600;
 }
 .navbar-links {
@@ -64,6 +67,7 @@ body {
     align-items: center;
     gap: 10px;
     white-space: nowrap;
+    transition: background-color 0.3s ease;
 }
 .btn-pill:hover {
     background-color: #e6b800;
@@ -103,8 +107,110 @@ body {
 .nav-cts .login-btn:hover {
     color: #ffcc00;
 }
+.nav-cts .start-btn {
+    background-color: white;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 50px;
+}
+.nav-cts .start-btn:hover {
+    background-color: #f1db81;
+    color: black;
+}
 
 h1, h2, h3, button, .logo-text {
     font-family: var(--font-primary);
     font-weight: 700;
+}
+
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 40px;
+    background-color:#dff0ff;
+}
+.badge {
+    display: inline-flex;
+    background-color: rgba(242, 255, 165, 0.777);
+    align-self: center;
+    border: 1px solid #f2ffa5;
+    border-radius: 100px;
+    padding: 10px 20px;
+    font-size: 0.85em;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 32px;
+}
+
+.hero h1{
+    font-size: 5rem;
+    color : black;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    line-height: 1;
+
+}
+.hero h1 span {
+    color: var(--primary);
+}
+.hero p{
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin-bottom: 56px;
+    font-weight: 400;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.btn-cta {
+    background-color: var(--primary);
+    color: black;
+    padding: 12px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    gap: 10px;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+.btn-cta:hover {
+    background-color: #e6b800;
+}
+.btn-outline {
+    background-color: transparent;
+    color: black;
+    padding: 12px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    gap: 10px;
+    white-space: nowrap;
+    border: 2px solid black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-outline:hover {
+    background-color: black;
+    color: white;
+}
+.hero .btn-pill {
+    font-size: 1.2rem;
+    padding: 12px 32px;
 }
