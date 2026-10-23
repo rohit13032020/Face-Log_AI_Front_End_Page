@@ -214,3 +214,140 @@ h1, h2, h3, button, .logo-text {
     font-size: 1.2rem;
     padding: 12px 32px;
 }
+
+
+
+
+
+
+
+.mid-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 40px;
+    background-color: var(--primary);
+}
+.mid-section h2{
+    font-size: 3rem;
+    color: black;
+    max-width: 800px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.mid-section p{
+    font-size: 1.2rem;
+    color: black;
+    max-width: 600px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+
+
+
+
+.main-footer{
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    border-top: 1px solid #333;
+}
+.main-footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    border-top: 1px solid #333;
+      /* Change to horizontal layout */
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 0;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.footer-brand .logo-text {
+    font-size: 1.5rem;
+    color: #cccccc;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.footer-grid p {
+    color: #cccccc;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.footer-links,
+.Company {
+    min-width: 0;
+}
+
+.footer-links h4,
+.Company h4 {
+    color: #ffcc00;
+    margin-top: 0;
+}
+
+.footer-links ul,
+.Company ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li,
+.Company li {
+    margin-bottom: 12px;
+}
+
+.footer-links a,
+.Company a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.Company a:hover {
+    color: #ffcc00;
+}
+
+.footer-bottom {
+    grid-column: 1 / -1;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #cccccc;
+}
+
+@media (max-width: 768px) {
+    .main-footer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        grid-column: auto;
+    }
+}
